@@ -14,7 +14,12 @@ namespace Rocket.Water
         public FrmConfiguracoes()
         {
             InitializeComponent();
+
+            icnBandeja.DoubleClick += IcnBandeja_DoubleClick;
         }
+
+        private void IcnBandeja_DoubleClick(object sender, EventArgs e)
+            => Activate();
 
         [SupportedOSPlatform("windows")]
         private void FrmConfiguracoes_Load(object sender, EventArgs e)
